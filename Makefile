@@ -1,5 +1,8 @@
 TARGETDIR=bin
-TARGET=$(TARGETDIR)/wiregui-gtk
+TARGETFILE=wiregui-gtk
+DISTFILE=wiregui-gtk.tar
+INSTALLERFILE=installer.sh
+TARGET=$(TARGETDIR)/${TARGETFILE}
 CXX=g++ -std=c++17
 CCFLAGS=-Wall -g -MMD
 LD=g++
@@ -25,11 +28,15 @@ $(TARGETDIR):
 
 .PHONY: clean
 clean:
-	rm -f $(TARGET) $(OBJDIR)/*.o $(OBJDIR)/*.d
-
-.PHONY: all
-all: $(TARGET)
+	rm -rf $(TARGETDIR) $(OBJDIR) $(DISTFILE)
 
 .PHONY: run
 run: $(TARGET)
 	./$(TARGET)
+
+.PHONY: dist
+dist: $(TARGET)
+	cp $(TARGET) .
+	rm -f $(DISTFILE)
+	tar -cvf $(DISTFILE) $(TARGETFILE) $(INSTALLERFILE)
+	rm -f $(TARGETFILE)

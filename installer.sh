@@ -1,0 +1,1 @@
+sudo cp wiregui-gtk /usr/local/bin
