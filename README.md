@@ -4,7 +4,7 @@
 
 1. Baixe o arquivo .deb disponível na release mais recente.
 2. Instale via terminal ou interface gráfica.
-3. Execute a aplicação por meio do ignome em sua interface.
+3. Execute a aplicação por meio do icone em sua interface.
 
 # Executar via binario
 
