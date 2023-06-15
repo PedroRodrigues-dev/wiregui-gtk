@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0.0
+Name=Wiregui GTK
+Comment=Interface para wireguard feita em GTK
+Exec=sh -c "pkexec --disable-internal-agent env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY wiregui-gtk"
+Terminal=false
+Icon=wiregui
+Type=Application
+Categories=Programming;Development;
+Keywords=wireguard;vpn;wiregui;
+

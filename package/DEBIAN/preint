@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -f "user/bin/wiregui-gtk" ]; then
+    echo "Foi encontrada uma versão já instalada"
+    echo "Desinstalando..."
+    sudo rm -f /usr/bin/wiregui-gtk
+    sudo rm -f /usr/share/applications/wiregui-gtk.desktop
+    sudo rm -f /usr/share/icons/hicolor/scalable/apps/wiregui.svg
+    echo "Versão anterior desinstalada"
+fi
+

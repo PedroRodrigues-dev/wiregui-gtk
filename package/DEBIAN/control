@@ -1,0 +1,7 @@
+Package: wiregui-gtk
+Version: 1.0.0
+Architecture: amd64
+Essential: no
+Priority: optional
+Maintainer: Pedro Rodrigues
+Description: Interface para wireguard feita em GTK

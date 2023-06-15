@@ -1,13 +1,15 @@
 # Interface para wireguard feita em GTK
 
-## Como installar
+## Como installar via .deb
 
-1. Baixe o arquivo .tar disponível na release mais recente.
-2. Extraia em algum lugar.
-3. Use "chmod +x installer.sh"
-4. Execute "./installer.sh".
-5. Feche e abra novamente o terminal.
-6. Inicie "wiregui-gtk".
+1. Baixe o arquivo .deb disponível na release mais recente.
+2. Instale via terminal ou interface gráfica.
+3. Execute a aplicação por meio do ignome em sua interface.
+
+# Executar via binario
+
+1. Baixe o arquivo binario disponível na release mais recente.
+2. Execute "./wiregui-gtk".
 
 ## Como compilar
 
@@ -18,12 +20,12 @@
 
 1. make clean
 
-apaga diretorios obj, bin e o arquivo wiregui-gtk.tar.
+apaga diretorios obj, bin, package/usr/bin e os arquivos .deb.
 
 2. make run
 
 compila e executa aplicação.
 
-3. make dist
+3. make deb
 
-compila e cria o wiregui-gtk.tar para distribuição
+compila e cria o .deb para distribuição
